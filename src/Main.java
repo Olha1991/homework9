@@ -1,8 +1,6 @@
 public class Main {
 
     public static void main(String[] args) {
-        // Carlo Collodi Pinocchio 1881
-        // Stephen King Misery 1987
 
         Author author1 = new Author( "Carlo", "Collodi");
         Book book1 = new Book("Pinocchio", 1881, author1);
