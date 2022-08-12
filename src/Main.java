@@ -14,5 +14,10 @@ public class Main {
         book2.setYear(1995);
         System.out.println("Сеттер - " + book1.getYear());
         System.out.println("Сеттер - " + book2.getYear());
+
+
+
+
     }
+
 }
