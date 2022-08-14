@@ -30,20 +30,19 @@ public class Book {
 
     @Override
     public String toString(){
-        return "Название: "+ this. name + " Год: " + this. year + " Автор: " + this. author;
+        return "Название: "+ name + " Год: " + year + " Автор: " + author;
     }
 
     @Override
-    public boolean equals (Object other) {
-        if(this == other) return true;
-        if(other == null || getClass() != other.getClass()) {
-            return false;
-        }
-        Book book = (Book) other;
-        return year == book.year && Objects.equals(name, book.name) && Objects.equals(author, book.author);
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return year == book.year && name.equals(book.name) && author.equals(book.author);
     }
+
     @Override
-    public int hashCode(){
-        return Objects.hash(year, author);
+    public int hashCode() {
+        return Objects.hash(name, year, author);
     }
 }

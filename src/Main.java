@@ -21,6 +21,7 @@ public class Main {
         System.out.println(book2);
 
         System.out.println(Objects.equals(book1,book2));
+        System.out.println(book1.hashCode() == book2.hashCode());
 
 
 

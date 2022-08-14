@@ -20,22 +20,19 @@ public class Author {
 
     @Override
     public String toString (){
-        return  this.firstName + " " + this.lastName;
+        return  firstName + " " + lastName;
     }
 
     @Override
-    public boolean equals (Object other) {
-        if(this.getClass() != other.getClass()) {
-            return false;
-        }
-        Author author = (Author) other;
-        return Objects.equals(firstName, author.firstName) && Objects.equals(lastName, author.lastName);
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Author author = (Author) o;
+        return firstName.equals(author.firstName) && lastName.equals(author.lastName);
     }
 
     @Override
-    public int hashCode(){
+    public int hashCode() {
         return Objects.hash(firstName, lastName);
     }
-
-
-    }
+}
