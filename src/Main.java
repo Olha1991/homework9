@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -14,6 +16,13 @@ public class Main {
         book2.setYear(1995);
         System.out.println("Сеттер - " + book1.getYear());
         System.out.println("Сеттер - " + book2.getYear());
+
+        System.out.println(book1);
+        System.out.println(book2);
+
+        System.out.println(Objects.equals(book1,book2));
+
+
 
 
 
